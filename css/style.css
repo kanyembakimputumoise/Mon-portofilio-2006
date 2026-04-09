@@ -227,3 +227,171 @@ ul li a::after {
         color: var(--orange-vif);
         transform: translate(-3px);
     }
+    /* Styles pour la page Contact */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.contact-item .icon {
+    font-size: 2rem;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.social-fast-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-contact {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex: 1;
+    text-align: center;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+/* Styles du Formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--violet-doux);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--violet-fonce);
+}
+/* Section projets */
+section {
+    padding: 40px;
+}
+
+/* Titre */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Conteneur des projets */
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Carte projet */
+section div div {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+}
+
+/* Image */
+section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Titre projet */
+h3 {
+    margin-top: 10px;
+}
+
+/* Description */
+p {
+    font-size: 14px;
+}
+
+/* Petit boutons (HTML, CSS, etc.) */
+section div div div {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+section div div div p {
+    background-color: #6c63ff;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* Liens Code / Démo */
+a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c63ff;
+    font-size: 14px;
+}
