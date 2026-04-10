@@ -1,96 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon porfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
         <div>
-            <a href="">Mon Portfolio</a>  
+            <a href="">Mon porfolio</a>    
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html" class="active">Projet</a></li>
+                <li><a href="passion.html">Passion</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </header>
- <section class="projets">
-    <h2>Mes Réalisations</h2>
+    <main>
+    <section class="projets">
+        <h2>Mes Réalisations</h2>
 
-    <div class="projets-container">
+        <div class="projets-container">
 
-        <div class="projet">
-            <img src="imagess/imagess1.jpeg " alt="E-commerce">
-            <h3>Site E-commerce</h3>
-            <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript.</p>
-            <div class="tech">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JS</p>
+            <!-- PROJET 1 -->
+            <div class="projet-card">
+                <!-- 👉 ICI tu mets ton image -->
+                <img src="imagess/imagess1.jpeg" alt="Projet 1">
+
+                <div class="projet-content">
+                    <h3>Site E-commerce</h3>
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Code</a>
+                        <a href="#">Démo</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Code</a>
-            <a href="">Démo</a>
-        </div>
 
-        <div class="projet">
-            <img src="imagess/imagess2.jpeg" alt="Tâches">
-            <h3>Gestionnaire de Tâches</h3>
-            <p>Application web pour organiser ses projets quotidiens.</p>
-            <div class="tech">
-                <p>Python</p>
-                <p>Flask</p>
+            <!-- PROJET 2 -->
+            <div class="projet-card">
+                <img src="imagess/imagess2.jpeg" alt="Projet 2">
+
+                <div class="projet-content">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Code</a>
+                        <a href="#">Démo</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Code</a>
-            <a href="">Démo</a>
-        </div>
 
-        <div class="projet">
-            <img src="imagess/imagess3.jpeg" alt="Blog">
-            <h3>Blog Personnel</h3>
-            <p>Projet en cours pour apprendre le backend.</p>
-            <div class="tech">
-                <p>PHP</p>
-                <p>Laravel</p>
+            <!-- PROJET 3 -->
+            <div class="projet-card">
+                <img src="imagess/imagess3.jpeg" alt="Projet 3">
+
+                <div class="projet-content">
+                    <h3>Blog Personnel</h3>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Code</a>
+                        <a href="#">Bientôt</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Code</a>
-            <a href="">Bientôt</a>
-        </div>
 
-        <div class="projet">
-            <img src="imagess/imagess4.jpeg" alt="Dashboard">
-            <h3>Dashboard d'analyse</h3>
-            <p>Visualisation de données avec Python.</p>
-            <div class="tech">
-                <p>Python</p>
-                <p>Data</p>
+            <!-- PROJET 4 -->
+            <div class="projet-card">
+                <img src="imagess/imagess4.jpeg" alt="Projet 4">
+
+                <div class="projet-content">
+                    <h3>Dashboard d'Analyse</h3>
+                    <p>Visualisation de données dynamiques avec Python et Matplotlib.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Data</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Code</a>
+                        <a href="#">Démo</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Code</a>
-            <a href="">Démo</a>
-        </div>
 
-        <div class="projet">
-            <img src="imagess/imagess5.jpeg" alt="Météo">
-            <h3>Application Météo</h3>
-            <p>Application utilisant une API météo en temps réel.</p>
-             <div class="tech">
-                <p>JavaScript</p>
-                <p>API</p>
+            <!-- PROJET 5 -->
+            <div class="projet-card">
+                <img src="imagess/imagess5.jpeg" alt="Projet 5">
+
+                <div class="projet-content">
+                    <h3>Application Météo</h3>
+                    <p>Application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Code</a>
+                        <a href="#">Démo</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Code</a>
-            <a href="">Démo</a>
-        </div>
 
-        <div class="projet">
-            <img src="imagess/imagess6.jpeg" alt="UI">
-            <h3>Maquette Mobile UI</h3>
-            <p>Conception d’interface utilisateur moderne.</p>
-            <div class="tech">
-                <p>Figma</p>
-                <p>Design</p>
+            <!-- PROJET 6 -->
+            <div class="projet-card">
+                <img src="imagess/imagess6.jpeg" alt="Projet 6">
+
+                <div class="projet-content">
+                    <h3>Maquette Mobile UI</h3>
+                    <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+
+                    <div class="tags">
+                        <span>Figma</span>
+                        <span>Design</span>
+                    </div>
+
+                    <div class="projet-links">
+                        <a href="#">Design</a>
+                        <a href="#">Aperçu</a>
+                    </div>
+                </div>
             </div>
-            <a href="">Design</a>
-            <a href="">Aperçu</a>
-        </div>
 
-    </div>
- </section>
-  <Footer>
+        </div>
+    </section>
+</main>
+
+            <nav>
+        <Footer>
        <p>&copy; 2026 MOSES. tous droits réservés.</p>
      <div>
       <img src="image/linkedin.jpg" alt="" width="30">
       <img src="image/github.jpg" alt="" width="30">
       <img src="image/x.jpg" alt="" width="30">
      </div>
-  </Footer>
+    </Footer>
     
 </body>
+</html>

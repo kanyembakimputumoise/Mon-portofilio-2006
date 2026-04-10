@@ -330,68 +330,205 @@ ul li a::after {
 .submit-btn:hover {
     background-color: var(--violet-fonce);
 }
-/* Section projets */
-section {
-    padding: 40px;
+
+/* Ajustement spécifique page contact */
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 4rem auto;
 }
 
-/* Titre */
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.contact-form h3,
+.contact-info h3 {
+    text-align: center;
 }
 
-/* Conteneur des projets */
-section div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.contact-info p {
+    margin-top: 1rem;
+    color: var(--gris-fonce);
+    text-align: center;
 }
 
-/* Carte projet */
-section div div {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    width: 250px;
+.contact-item {
+    justify-content: center;
 }
 
-/* Image */
-section img {
+.social-fast-links {
+    margin-top: 1.5rem;
+}
+
+.contact-form form {
+    margin-top: 1rem;
+}
+
+/* SECTION PROJETS */
+.projets {
+    text-align: center;
+    margin: 5rem 2rem;
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* CARD */
+.projet-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.projet-card img {
     width: 100%;
-    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
 }
 
-/* Titre projet */
-h3 {
-    margin-top: 10px;
+/* CONTENU */
+.projet-content {
+    padding: 1.5rem;
+    text-align: left;
 }
 
-/* Description */
-p {
-    font-size: 14px;
+.projet-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
 }
 
-/* Petit boutons (HTML, CSS, etc.) */
-section div div div {
-    display: flex;
-    gap: 5px;
-    margin: 10px 0;
+.projet-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
 }
 
-section div div div p {
-    background-color: #6c63ff;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 10px;
-    font-size: 12px;
+/* TAGS */
+.tags {
+    margin-bottom: 1rem;
 }
 
-/* Liens Code / Démo */
-a {
+.tags span {
     display: inline-block;
-    margin-right: 10px;
+    background: var(--gris-clair);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+/* LIENS */
+.projet-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet-links a {
     text-decoration: none;
-    color: #6c63ff;
-    font-size: 14px;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.projet-links a:hover {
+    color: var(--violet-doux);
+}
+
+/* SECTION PASSIONS */
+.passions {
+    text-align: center;
+    margin: 5rem 2rem;
+}
+
+.passions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* CARD */
+.passion-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.passion-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* CONTENU */
+.passion-content {
+    padding: 1.5rem;
+}
+
+.passion-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
+}
+
+.passion-content p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+}
+
+/* SECTION DIVERTISSEMENT */
+.divertissement {
+    text-align: center;
+    margin: 5rem 2rem;
+}
+
+.divertissement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* CARD */
+.divertissement-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.divertissement-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.divertissement-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTENU */
+.divertissement-content {
+    padding: 1.2rem;
+}
+
+.divertissement-content h3 {
+    color: var(--violet-doux);
+    font-size: 1.2rem;
 }
